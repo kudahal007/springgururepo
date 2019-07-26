@@ -19,9 +19,7 @@ public class BookController {
 	public String getBooks(Model model) {
 		
         
-		model.addAttribute("books", bookRepository.findAll());
-		//System.out.println(bookRepository.findAll().toString());
-		//model.addAttribute("books", "Kumar");
+		model.addAttribute("books", bookRepository.findAll());		
 		return "books";
 	}
 	@RequestMapping("/")
